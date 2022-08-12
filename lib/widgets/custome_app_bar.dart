@@ -10,9 +10,7 @@ class CustomeAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.only(
-        top: MediaQuery.of(context).padding.top + 25,
-        left: 25,
-        right: 25,
+        top: MediaQuery.of(context).padding.top + 35,
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -29,7 +27,6 @@ class CustomeAppBar extends StatelessWidget {
 
   Widget _buildIcon(IconData icon) {
     return Container(
-      padding: EdgeInsets.all(8),
       child: Icon(icon),
     );
   }
